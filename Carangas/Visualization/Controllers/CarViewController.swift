@@ -15,9 +15,19 @@ class CarViewController: UIViewController {
     @IBOutlet weak var lbPrice: UILabel!
     
     // MARK: - Properties
-
+    var car: Car!
+    
     // MARK: - Super Methods
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    }    
+        title = car.name
+        lbBrand.text = "Marca: \(car.brand)"
+        lbGasType.text = "Combustível: \(car.fuel)"
+        lbPrice.text = "Preço: R$ \(car.price)"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? FormViewController
+        vc?.car = car
+    }
 }

@@ -120,3 +120,5 @@ class CarAPI {
     
     
 }
+
+extension CarAPI: CarListingServiceProtocol {}

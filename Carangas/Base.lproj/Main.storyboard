@@ -32,6 +32,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i0j-3V-40W">
                                             <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="carsCellTitle"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.20000000000000001" green="0.56470588239999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -46,10 +47,13 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="MHM-JO-Vgw" kind="show" identifier="carSegue" id="Tfo-3t-NIq"/>
+                                    <segue destination="MHM-JO-Vgw" kind="show" id="iph-if-UGj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="carsTable"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="G2X-ji-wE3" id="Yyt-ju-TgT"/>
                             <outlet property="delegate" destination="G2X-ji-wE3" id="l0l-dZ-PNp"/>
@@ -82,7 +86,7 @@
         <!--Caranga-->
         <scene sceneID="qDk-RP-NJT">
             <objects>
-                <viewController id="MHM-JO-Vgw" customClass="CarViewController" customModule="Carangas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarViewController" id="MHM-JO-Vgw" customClass="CarViewController" customModule="Carangas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W86-dy-gnA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +262,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rs2-OM-1kL"/>
+        <segue reference="ykc-W4-LW8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="main">

@@ -8,6 +8,11 @@
 
 import Foundation
 
+protocol CarListingServiceProtocol {
+    func loadCars(onComplete: @escaping (Result<[Car], CarAPIError>) -> Void)
+    func deleteCar(_ car: Car, onComplete: @escaping (Result<Void, CarAPIError>) -> Void)
+}
+
 class CarsListingViewModel {
     
     private var cars: [Car] = [] {
@@ -15,12 +20,16 @@ class CarsListingViewModel {
             carsDidUpdate?()
         }
     }
-    private var service = CarAPI()
+    private var service: CarListingServiceProtocol
     var carsDidUpdate: (() -> Void)?
     var fail: ((CarAPIError) -> Void)?
  
     var count: Int {
         cars.count
+    }
+    
+    init(service: CarListingServiceProtocol = CarAPI()) {
+        self.service = service
     }
     
     func loadCars() {

@@ -13,6 +13,13 @@
 		2286C54725688F5800D7AF77 /* CarVisualizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286C54625688F5800D7AF77 /* CarVisualizationViewModel.swift */; };
 		2286C54A256892FB00D7AF77 /* CarFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286C549256892FB00D7AF77 /* CarFormViewModel.swift */; };
 		2286C54E2568A0A300D7AF77 /* UIAlertController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286C54D2568A0A300D7AF77 /* UIAlertController+Show.swift */; };
+		2296DD6F256944E90017C129 /* CarsListingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD6E256944E90017C129 /* CarsListingViewModelTests.swift */; };
+		2296DD712569486E0017C129 /* CarVisualizationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD702569486E0017C129 /* CarVisualizationViewModelTests.swift */; };
+		2296DD74256956830017C129 /* CarAPIStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD73256956830017C129 /* CarAPIStub.swift */; };
+		2296DD7725695CCB0017C129 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD7625695CCB0017C129 /* CarTests.swift */; };
+		2296DD7925695DA30017C129 /* CarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD7825695DA30017C129 /* CarViewControllerTests.swift */; };
+		2296DD7C256961BB0017C129 /* CarAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD7B256961BB0017C129 /* CarAPITests.swift */; };
+		2296DD842569660B0017C129 /* CarangasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296DD832569660B0017C129 /* CarangasUITests.swift */; };
 		22E119F225646CD20085CC3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E119F125646CD20085CC3F /* AppDelegate.swift */; };
 		22E119F925646CD20085CC3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E119F725646CD20085CC3F /* Main.storyboard */; };
 		22E119FB25646CD30085CC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E119FA25646CD30085CC3F /* Assets.xcassets */; };
@@ -24,6 +31,23 @@
 		22E11A17256484B50085CC3F /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E11A16256484B50085CC3F /* CarAPI.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2296DD672569436A0017C129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E119E625646CD10085CC3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E119ED25646CD10085CC3F;
+			remoteInfo = Carangas;
+		};
+		2296DD862569660B0017C129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E119E625646CD10085CC3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E119ED25646CD10085CC3F;
+			remoteInfo = Carangas;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2286C53E256878F100D7AF77 /* CarsListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingViewModel.swift; sourceTree = "<group>"; };
 		2286C5412568808A00D7AF77 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
@@ -31,6 +55,17 @@
 		2286C54625688F5800D7AF77 /* CarVisualizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationViewModel.swift; sourceTree = "<group>"; };
 		2286C549256892FB00D7AF77 /* CarFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewModel.swift; sourceTree = "<group>"; };
 		2286C54D2568A0A300D7AF77 /* UIAlertController+Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Show.swift"; sourceTree = "<group>"; };
+		2296DD622569436A0017C129 /* CarangasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarangasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2296DD662569436A0017C129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2296DD6E256944E90017C129 /* CarsListingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingViewModelTests.swift; sourceTree = "<group>"; };
+		2296DD702569486E0017C129 /* CarVisualizationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationViewModelTests.swift; sourceTree = "<group>"; };
+		2296DD73256956830017C129 /* CarAPIStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPIStub.swift; sourceTree = "<group>"; };
+		2296DD7625695CCB0017C129 /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
+		2296DD7825695DA30017C129 /* CarViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewControllerTests.swift; sourceTree = "<group>"; };
+		2296DD7B256961BB0017C129 /* CarAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPITests.swift; sourceTree = "<group>"; };
+		2296DD812569660B0017C129 /* CarangasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarangasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2296DD832569660B0017C129 /* CarangasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarangasUITests.swift; sourceTree = "<group>"; };
+		2296DD852569660B0017C129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E119EE25646CD20085CC3F /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E119F125646CD20085CC3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E119F825646CD20085CC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +80,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2296DD5F2569436A0017C129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2296DD7E2569660B0017C129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E119EB25646CD10085CC3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,10 +145,75 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2296DD632569436A0017C129 /* CarangasTests */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD7A256961A40017C129 /* Service */,
+				2296DD7525695CB20017C129 /* Shared Models */,
+				2296DD72256956370017C129 /* Stubs */,
+				2296DD6D256944500017C129 /* Listing */,
+				2296DD6C256943F10017C129 /* Visualization */,
+				2296DD662569436A0017C129 /* Info.plist */,
+			);
+			path = CarangasTests;
+			sourceTree = "<group>";
+		};
+		2296DD6C256943F10017C129 /* Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD702569486E0017C129 /* CarVisualizationViewModelTests.swift */,
+				2296DD7825695DA30017C129 /* CarViewControllerTests.swift */,
+			);
+			path = Visualization;
+			sourceTree = "<group>";
+		};
+		2296DD6D256944500017C129 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD6E256944E90017C129 /* CarsListingViewModelTests.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		2296DD72256956370017C129 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD73256956830017C129 /* CarAPIStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		2296DD7525695CB20017C129 /* Shared Models */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD7625695CCB0017C129 /* CarTests.swift */,
+			);
+			path = "Shared Models";
+			sourceTree = "<group>";
+		};
+		2296DD7A256961A40017C129 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD7B256961BB0017C129 /* CarAPITests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2296DD822569660B0017C129 /* CarangasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2296DD832569660B0017C129 /* CarangasUITests.swift */,
+				2296DD852569660B0017C129 /* Info.plist */,
+			);
+			path = CarangasUITests;
+			sourceTree = "<group>";
+		};
 		22E119E525646CD10085CC3F = {
 			isa = PBXGroup;
 			children = (
 				22E119F025646CD20085CC3F /* Carangas */,
+				2296DD632569436A0017C129 /* CarangasTests */,
+				2296DD822569660B0017C129 /* CarangasUITests */,
 				22E119EF25646CD20085CC3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				22E119EE25646CD20085CC3F /* Carangas.app */,
+				2296DD622569436A0017C129 /* CarangasTests.xctest */,
+				2296DD812569660B0017C129 /* CarangasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +325,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2296DD612569436A0017C129 /* CarangasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2296DD6B2569436A0017C129 /* Build configuration list for PBXNativeTarget "CarangasTests" */;
+			buildPhases = (
+				2296DD5E2569436A0017C129 /* Sources */,
+				2296DD5F2569436A0017C129 /* Frameworks */,
+				2296DD602569436A0017C129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2296DD682569436A0017C129 /* PBXTargetDependency */,
+			);
+			name = CarangasTests;
+			productName = CarangasTests;
+			productReference = 2296DD622569436A0017C129 /* CarangasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2296DD802569660B0017C129 /* CarangasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2296DD882569660B0017C129 /* Build configuration list for PBXNativeTarget "CarangasUITests" */;
+			buildPhases = (
+				2296DD7D2569660B0017C129 /* Sources */,
+				2296DD7E2569660B0017C129 /* Frameworks */,
+				2296DD7F2569660B0017C129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2296DD872569660B0017C129 /* PBXTargetDependency */,
+			);
+			name = CarangasUITests;
+			productName = CarangasUITests;
+			productReference = 2296DD812569660B0017C129 /* CarangasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		22E119ED25646CD10085CC3F /* Carangas */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E11A0225646CD30085CC3F /* Build configuration list for PBXNativeTarget "Carangas" */;
@@ -236,6 +388,14 @@
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = Afrodev;
 				TargetAttributes = {
+					2296DD612569436A0017C129 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 22E119ED25646CD10085CC3F;
+					};
+					2296DD802569660B0017C129 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 22E119ED25646CD10085CC3F;
+					};
 					22E119ED25646CD10085CC3F = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -255,11 +415,27 @@
 			projectRoot = "";
 			targets = (
 				22E119ED25646CD10085CC3F /* Carangas */,
+				2296DD612569436A0017C129 /* CarangasTests */,
+				2296DD802569660B0017C129 /* CarangasUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2296DD602569436A0017C129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2296DD7F2569660B0017C129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E119EC25646CD10085CC3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +449,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2296DD5E2569436A0017C129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2296DD712569486E0017C129 /* CarVisualizationViewModelTests.swift in Sources */,
+				2296DD74256956830017C129 /* CarAPIStub.swift in Sources */,
+				2296DD7725695CCB0017C129 /* CarTests.swift in Sources */,
+				2296DD7C256961BB0017C129 /* CarAPITests.swift in Sources */,
+				2296DD6F256944E90017C129 /* CarsListingViewModelTests.swift in Sources */,
+				2296DD7925695DA30017C129 /* CarViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2296DD7D2569660B0017C129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2296DD842569660B0017C129 /* CarangasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22E119EA25646CD10085CC3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +491,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2296DD682569436A0017C129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E119ED25646CD10085CC3F /* Carangas */;
+			targetProxy = 2296DD672569436A0017C129 /* PBXContainerItemProxy */;
+		};
+		2296DD872569660B0017C129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E119ED25646CD10085CC3F /* Carangas */;
+			targetProxy = 2296DD862569660B0017C129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		22E119F725646CD20085CC3F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -314,6 +524,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2296DD692569436A0017C129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.CarangasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carangas.app/Carangas";
+			};
+			name = Debug;
+		};
+		2296DD6A2569436A0017C129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.CarangasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carangas.app/Carangas";
+			};
+			name = Release;
+		};
+		2296DD892569660B0017C129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.CarangasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Carangas;
+			};
+			name = Debug;
+		};
+		2296DD8A2569660B0017C129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.CarangasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Carangas;
+			};
+			name = Release;
+		};
 		22E11A0025646CD30085CC3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,6 +749,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2296DD6B2569436A0017C129 /* Build configuration list for PBXNativeTarget "CarangasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2296DD692569436A0017C129 /* Debug */,
+				2296DD6A2569436A0017C129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2296DD882569660B0017C129 /* Build configuration list for PBXNativeTarget "CarangasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2296DD892569660B0017C129 /* Debug */,
+				2296DD8A2569660B0017C129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22E119E925646CD10085CC3F /* Build configuration list for PBXProject "Carangas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

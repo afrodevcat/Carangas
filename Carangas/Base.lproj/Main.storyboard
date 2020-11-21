@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="Vwl-h5-fpg">
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Pqs-Tq-ewc">
                             <rect key="frame" x="0.0" y="99.5" width="414" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="i0j-3V-40W" detailTextLabel="aeG-Y7-G7v" style="IBUITableViewCellStyleValue1" id="qbM-fL-tOC">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="i0j-3V-40W" detailTextLabel="aeG-Y7-G7v" style="IBUITableViewCellStyleValue1" id="qbM-fL-tOC" customClass="CarTableViewCell" customModule="Carangas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qbM-fL-tOC" id="wWq-gO-LF2">
@@ -68,7 +68,7 @@
                         <attributedString key="attributedTitle">
                             <fragment content="Atualizando...">
                                 <attributes>
-                                    <font key="NSFont" metaFont="controlContent" size="11"/>
+                                    <font key="NSFont" metaFont="label" size="11"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -77,7 +77,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p85-1F-prp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="152"/>
+            <point key="canvasLocation" x="734.78260869565224" y="151.33928571428569"/>
         </scene>
         <!--Caranga-->
         <scene sceneID="qDk-RP-NJT">
@@ -135,9 +135,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYZ-5Z-WTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1653.5999999999999" y="458.32083958020991"/>
+            <point key="canvasLocation" x="1652.1739130434785" y="458.03571428571428"/>
         </scene>
-        <!--Cadastro-->
+        <!--mdflksjflkdfn-->
         <scene sceneID="Pgy-eW-6YW">
             <objects>
                 <viewController id="ifh-j7-PN6" customClass="FormViewController" customModule="Carangas" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +192,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qwf-Or-OnS"/>
                                 </constraints>
-                                <state key="normal" title="Cadastrar Carro">
+                                <state key="normal" title="dfsdfdff">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -225,7 +225,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pya-PA-seP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cadastro" id="yUv-nk-rEs"/>
+                    <navigationItem key="navigationItem" title="mdflksjflkdfn" id="yUv-nk-rEs"/>
                     <connections>
                         <outlet property="btAddEdit" destination="Pak-tW-6ZM" id="iCi-3f-Bdr"/>
                         <outlet property="scGasType" destination="LgG-Na-tNM" id="8ve-lS-Rwq"/>

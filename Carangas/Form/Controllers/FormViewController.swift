@@ -17,43 +17,27 @@ final class FormViewController: UIViewController {
     @IBOutlet weak var btAddEdit: UIButton!
     
     // MARK: - Properties
-    var car: Car!
+    var viewModel: CarFormViewModel = CarFormViewModel()
     
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        if car != nil {
-            tfName.text = car.name
-            tfBrand.text = car.brand
-            tfPrice.text = "\(car.price)"
-            scGasType.selectedSegmentIndex = car.gasType
-            btAddEdit.setTitle("Aletrar carro", for: .normal)
-            title = "Alteração"
+        
+        viewModel.delegate = self
+        
+        if viewModel.isEditing {
+            tfName.text = viewModel.name
+            tfBrand.text = viewModel.brand
+            tfPrice.text = viewModel.price
+            scGasType.selectedSegmentIndex = viewModel.gasType
         }
+        btAddEdit.setTitle(viewModel.buttonTitle, for: .normal)
+        title = viewModel.title
     }
     
     // MARK: - IBActions
     @IBAction func addEdit(_ sender: UIButton) {
-        if car == nil {
-            car = Car()
-        }
-        
-        car.name = tfName.text!
-        car.brand = tfBrand.text!
-        car.gasType = scGasType.selectedSegmentIndex
-        car.price = Int(tfPrice.text!) ?? 0
-        
-        if car._id == nil {
-            
-            CarAPI().createCar(car) { (_) in
-                self.goBack()
-            }
-            
-        } else {
-            CarAPI().updateCar(car) { (_) in
-                self.goBack()
-            }
-        }
+        viewModel.saveCar(name: tfName.text!, brand: tfBrand.text!, gasType: scGasType.selectedSegmentIndex, price: tfPrice.text!)
     }
     
     // MARK: - Methods
@@ -62,4 +46,50 @@ final class FormViewController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
     }
+    
+    /*
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+            self.goBack()
+        }
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+    }
+    */
 }
+
+extension FormViewController: CarFormViewModelDelegate {
+    func onCarCreated(result: Result<Void, CarAPIError>) {
+        DispatchQueue.main.async {
+            switch result {
+            case .success:
+                UIAlertController.showAlert(presenter: self, title: "Parabéns!", message: "Seu carro foi criado com sucesso!") { (_) in
+                    self.goBack()
+                }
+                //self.showAlert(title: "Parabéns!", message: "Seu carro foi criado com sucesso!")
+            case .failure(let carApiError):
+                UIAlertController.showAlert(presenter: self, title: "Erro ao criar o carro!", message: carApiError.errorMessage)
+                //self.showAlert(title: "Erro ao criar o carro!", message: carApiError.errorMessage)
+            }
+        }
+    }
+    
+    func onCarUpdated(result: Result<Void, CarAPIError>) {
+        DispatchQueue.main.async {
+            switch result {
+            case .success:
+                UIAlertController.showAlert(presenter: self, title: "Sucesso!", message: "Seu carro foi atualizado!") { (_) in
+                    self.goBack()
+                }
+                //self.showAlert(title: "Sucesso!", message: "Seu carro foi atualizado!")
+            case .failure(let carApiError):
+                UIAlertController.showAlert(presenter: self, title: "Erro ao atualizar o carro!", message: carApiError.errorMessage)
+                //self.showAlert(title: "Erro ao atualizar o carro!", message: carApiError.errorMessage)
+            }
+        }
+    }
+}
+
